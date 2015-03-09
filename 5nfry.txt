@@ -1,0 +1,134 @@
+Project description:
+In this project, we will design and implement an event management system.
+The main purpose of the system is to create a platform, in which users create/find events in an interactive fashion.
+The project will be developed for androidOS, using the client&server architecture. For choosing a location, Foursquare API will be used.
+To ensure only one unique account for a single user, we will require hardware id to be linked to the account.
+
+UNDERLYING SYSTEMS:
+*Event Security / Secrecy
+To ensure security and secrecy of the events, there is a 2 step confirmation protocol for joining events. This is to prevent exposal of
+personal details to any user that is viewing the event. Viewers can't see the exact location (can only see the district) and the attendees.
+    1- Request to see details. Shows exact location, other attendees.
+    2- Request to join event.
+    
+*Karma
+Is a score to visualise attendence to events, can go negative. Every account has only one Karma. Does not imply anything else.
+Ex. High karma person = more likely to attend
+
+*sKarma
+Is a score to visualise how good of a person you are, how much fun people had while spending time with the user. sKarma is unique to every group. Does not imply rating/attendence.
+Ex. High sKarma person = fun at what he's doing, in a social aspect
+
+*Rating
+Is a score to visualise how good you are at doing what you are doing. Rating is unique for every subgroup. Does not imply personality/attendence to events.
+Ex. High rating pool player = good pool player
+
+*Ignore
+If user A blocks/ignores user B
+    the ignored user B can not see/join the events created by the user A    
+    *** if the user A and user B tries to join the same event created by user C
+
+*System Admin
+System admin can release hardware id(hid) from accounts, tie new hid, ban/lift accounts. Can file reports on the users. 
+/*He has accended above the regular users, he has reached nirvana of the fayton system.*/ -ignore this line-
+
+
+
+FEATURES:
+*Create event
+The user creates an event with a name, a short description and date/time. The given event can only be of a predefined type (ex. Pool, tourism).
+Using the Foursquare API, locations will be searched which support the chosen predefined type. The user can only select a location among the list(that is provided by Foursquare API),
+therefor they cant create an event in a "custom" location. The event creator can put restriction on the event, which are karma, minEventJoinCount, group/subgroup
+and subgroup rating at subgroup. Created events have properties as attendantLimit and abandonTimeLimit, which is a variable which limits the final drop time of the event.
+
+
+*Join
+Users can search for an pre defined event type. User can also provide restricitons for the event such as date, karma of the host. User is only able to see events only if the user's own karma is above the spesific karma limit of the event. User can only see approx location and limited information about the event. If the user wishes to join the said event he/she sends a request to the host of the event. If the request approved all details regarding to the event are revealed. Then user can decide whether to join or not to join the event. This action will notify the host about the users desicion. 
+
+*Group
+Groups are pre defined set of types for events. Each grop has a subgroup. For example an event group name can be "motor sports" and the sub groups of this can be "car racing","motorcycle racing". Each user also have a sKarma for each group derived from subgroup activities, which will be explained in the karma system.
+
+*Profile
+Each user has a profile page that they can choose to show or hide information.
+The profile includes;
+    Basic friendship list: Add/remove friend, see their profiles, message them
+    About Me: Talk about yourself. Users have to put smoking/drinking info.
+    Recent activities: User can turn this on/off
+    Pictures: Only event related pictures, basic commenting
+    Stats: Your groups, rankings, sKarma, karma and such statistical information.
+    Ignore: Ignored people(invisible to public view)
+
+
+
+
+*******************
+ANDROID_ID seems a good choice for a unique device identifier
+*******************
+
+======================================
+CREATE EVENT
+
+Name -> example
+Desc -> example v2
+time/date (start/end)
+
+Bilardo -----------------|
+                         v
+mekan -> 4quare(query Bilardo)
+
+restriction: *
+karma (implement DR)
+JoinCount
+grp
+rating @ grp
+
+properties: 
+event drop time
+size
+
+EVENT CREATED.
+
+REQUEST Y/N
+
+if(ditched) -> can flag event as "urgent"
+
+========================================
+
+JOIN EVENT
+
+search event(predef(???) bilardo)
+-cant see if cant fulfill restrictions
+request info (urg/nor)
+allowed
+*displays exact loc
+request join(urg/nor)
+if(urg) -> +x karma
+else -> normal amk
+
+=========================================
+
+GROUP
+
+sKarma -> bu adamla bu işi yaparken ne kadar keyif aldım
+    SUBGROUPS(Bilardo)
+    if(comp)
+    rating -> bu adam bu işi ne kadar iyi yapıyo
+    else if(casual)
+    no rating change
+
+=========================================
+
+PROFILE
+
+stats
+pics(yorum(?)/*comments will not exist in the first release*/)/*limited number of pics per event*/
+recent activities
+about me (traits / falan filan amk)
+basic friendship
+mesaj
+
+
+=========================================
+
+
+
