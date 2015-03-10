@@ -1,0 +1,89 @@
+proce
+
+last edit 9/3/2015 19:40 Emir, Tanalp
+
+Table of Contents
+
+0.	Table of Contents……………………………………………………………………………….………………………….
+1.	Preface………………………………………………………………………………………………………………………….
+2.	Introduction………………………………………………………………………………..…………………………………
+2.1.	Purpose………………………………………………………………………………..…………………………………
+2.2.	Features………………………………………………………………………………………………………………….
+2.3.	Integration……………………………………………………………………………………………………………..
+2.4.	Glossary………………………………………………………………………………..………………………………..
+2.5.	References………………………………………………………………………………..……………………………
+3.	User Requirements Specification…………………………………………………………………………………..
+3.1.	Provided Services…………………………………………………………………………………………………..
+3.2.	Functional Requirements………………………………………………………………………………..………
+3.3.	Non-Functional Requirements………………………………………………………………………………..
+3.4.	Domain Requirements………………………………………………………………………………..………….
+4.	System Architecture………………………………………………………………………………..…………………….
+5.	System Requirements Specification……………………………………………………………………………….
+5.1.	System Integration and Components………………………………………………………………………..
+5.2.	Functional Requirements………………………………………………………………………………..………
+5.3.	Non-Functional Requirements………………………………………………………………………………..
+5.4.	Domain Requirements………………………………………………………………………………..……………
+6.	System Evolution………………………………………………………………………………..…………………………
+7.	Appendices………………………………………………………………………………..……………………………………
+
+1	Preface
+
+2	Introduction
+2.1	Purpose
+Fayton is a community based event planner, which connects users all over the world for any type of event. Events can vary from touristic to educational. Purpose of fayton is to bring people together who enjoys similar activities in a practical way.
+2.2	Features
+Fayton has four main features. 
+•	Hosting an event
+•	Joining an event
+•	User profiles
+•	User groups
+Through these features privacy and security of the users will be ensured.
+Needs moar stuff
+2.3	Integration
+User
+
+How the system integrates with life & existing systems
+2.4	Glossary
+•	Fayton 
+	Name of the application
+
+•	Karma
+Is a score to visualize attendance to events, can go negative. Every account has only one Karma. Does not imply anything else.
+			Ex. High karma person = more likely to attend
+
+•	Rating 
+Is a score to visualise how good you are at doing what you are doing. Rating is unique for every subgroup. Does not imply personality/attendence to events.
+			Ex. High rating pool player = good pool player
+
+•	sKarma 
+Is a score to visualise how good of a person you are, how much fun people had while spending time with the user. sKarma is unique to every group. This does not imply rating/attendance.
+			Ex. High sKarma person = fun at what he's doing, in a social aspect
+
+
+2.5	References
+We will reference the external resources that be used
+3	User Requirement Specification
+3.1	Provided Services
+Explanation of features.
+3.2	Functional Requirements
+Functional Requirements of the features will be explained at high level.
+3.3	Non-Functional Requirements
+Non-Functional Requirements of the features will be explained at high level.
+3.4	Domain Requirements
+Domain Requirements will be explained at high level.
+4	System Architecture
+5	System Requirements Specification
+5.1	System Integration and Components
+How the system will be implemented and how it will interact with existing systems
+5.2	Functional Requirements
+Functional Requirements of the system will be explained at low level.
+5.3	Non-Functional Requirements
+Non-Functional Requirements of the system will be explained at low level.
+5.4	Domain Requirements
+Domain Requirements will be explained at low level.
+6	System Evulotion
+How the system will adapt to the ever changing mobile environment
+7	Appendices
+If needed appendices will be here
+
+
