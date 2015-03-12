@@ -30,17 +30,25 @@ Table of Contents
 
 2	Introduction
 2.1	Purpose
-Fayton is a community based event planner, which connects users all over the world for any type of event. Events can vary from touristic to educational. Purpose of fayton is to bring people together who enjoys similar activities in a practical way.
+Fayton is a community based event planner, which connects users all over the world for any 
+type of event. Events can vary from touristic to educational. Purpose of fayton is to bring 
+people together who enjoys similar activities in a practical way.
+real life
+
+easy to use system
 2.2	Features
 Fayton has four main features. 
-•	Hosting an event
-•	Joining an event
-•	User profiles
-•	User groups
-Through these features privacy and security of the users will be ensured.
-Needs moar stuff
+•	Hosting an event: A user creates an event as a host. Other users can request join this event.
+•	Joining an event: An interested user can browse avalible events, of which he has eligiblity to see.
+•	User profiles: Store personal social information. 
+•	User groups: There are user groups based on event type.
+Through these features privacy and security of the users will be ensured, through hiding certain information. which will be
+explained at the user spesification at more detail.
 2.3	Integration
-User
+We wish fayton to be an ever evolving system alongside social kubi ekle birşey buraya. Bi buraya eklersen birşsy
+bozuşuruz. 
+
+batman reference bravo nolan.
 
 How the system integrates with life & existing systems
 2.4	Glossary
@@ -58,8 +66,19 @@ Is a score to visualise how good you are at doing what you are doing. Rating is 
 •	sKarma 
 Is a score to visualise how good of a person you are, how much fun people had while spending time with the user. sKarma is unique to every group. This does not imply rating/attendance.
 			Ex. High sKarma person = fun at what he's doing, in a social aspect
-
-
+admin 
+Admins can change/reset hardware ID's that are connected to the accounts. Ban the users from the system. Can change accounts 
+to masterrace or pleb. creates user groups.
+pleb 
+is the default free user of the system. Has limited access to the features.
+Glorious masterrace
+Paid users of the system. These user have full access to the user related content.
+database
+We will use an sql database which has certain functions, which can be accessed through the mobile platform. the database
+contains user information. All events.
+request view/info
+request join
+host
 2.5	References
 We will reference the external resources that be used
 3	User Requirement Specification
